@@ -7,19 +7,18 @@ body {
     background-size: 100% 32px;
   }
   .banner-wrapper {
+    height: 100px;
     overflow: hidden;
-    max-height: 250px;
     border-radius: 6px;
     margin-bottom: 1rem;
   }
   
   .banner-img {
     width: 100%;
-    max-width: 1200px;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
     margin: 0 auto;
-    object-fit: cover;
   }
   
    header {
