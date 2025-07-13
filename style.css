@@ -6,8 +6,15 @@ body {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px);
     background-size: 100% 32px;
   }
-  
-  header {
+  .banner-img {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+  }
+   header {
     background-color: #1b1f23;
     color: #00d8ff;
     padding: 2rem 1rem;
