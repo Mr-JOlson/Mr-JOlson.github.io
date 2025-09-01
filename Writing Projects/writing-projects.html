@@ -29,6 +29,8 @@
     header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 28px; }
     header h1 { margin: 0; font-size: clamp(28px, 4vw, 40px); letter-spacing: 0.2px; }
     header p { margin: 6px 0 0; color: var(--muted); }
+    header nav a { margin-left: 16px; text-decoration: none; color: var(--accent); font-weight: 500; }
+    header nav a:hover, header nav a:focus-visible { text-decoration: underline; }
 
     .section { background: color-mix(in srgb, var(--panel) 92%, transparent); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; margin-top: 18px; box-shadow: 0 1px 0 rgba(0,0,0,.05), 0 12px 30px rgba(0,0,0,.08); }
     .section h2 { margin: 0 0 12px; font-size: 18px; letter-spacing: .2px; text-transform: uppercase; color: var(--muted); }
@@ -59,19 +61,20 @@
         <h1>Writing Projects</h1>
         <p>Links to current and past writing projects.</p>
       </div>
+      <nav>
+        <a href="/">Home Page</a>
+      </nav>
     </header>
 
     <!-- Current Projects -->
     <section class="section" aria-labelledby="current">
       <h2 id="current">Current Projects</h2>
 
-      <!-- Duplicate the .project block below for additional current projects -->
       <article class="project">
         <h3>Artificial Sentience</h3>
         <ul class="links">
           <li>
             <a href="https://www.dropbox.com/scl/fi/ez7hmud3dlwlnat3m3sbr/Character-Sketches.pdf?rlkey=ef7ta6zwjujdf8akzmjhyk1b1&amp;dl=0" target="_blank" rel="noopener noreferrer">
-              <!-- link icon -->
               <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3.9 12a5 5 0 0 1 5-5h3a1 1 0 1 1 0 2h-3a3 3 0 0 0 0 6h3a1 1 0 1 1 0 2h-3a5 5 0 0 1-5-5Zm6-1a1 1 0 0 1 0-2h4.2a5 5 0 1 1 0 10H10a1 1 0 1 1 0-2h4.1a3 3 0 1 0 0-6H9.9Z"/></svg>
               Characters
             </a>
@@ -83,16 +86,6 @@
     <!-- Past Projects -->
     <section class="section" aria-labelledby="past">
       <h2 id="past">Past Projects</h2>
-      <!-- Add past projects below by copying the .project pattern.
-           Example:
-           <article class="project">
-             <h3>Project Title</h3>
-             <ul class="links">
-               <li><a href="#" target="_blank" rel="noopener noreferrer">Manuscript</a></li>
-               <li><a href="#" target="_blank" rel="noopener noreferrer">Notes</a></li>
-             </ul>
-           </article>
-      -->
     </section>
 
     <footer>
@@ -101,7 +94,6 @@
   </div>
 
   <script>
-    // Update year automatically
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
