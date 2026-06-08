@@ -4,18 +4,18 @@ description: >-
   High school Physics, Biology, and Astronomy resources from Gulf Breeze High School.
   Lesson materials, robotics, writing projects, and more.
 url: "https://www.physicsy.com"
-baseurl: "" 
+baseurl: ""
 
 # Author info
 author:
   name: Jason Olson
-  email: your-email@example.com
+  email: olsonj@santarosa.k12.fl.us
   github_username: Mr-JOlson
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /:title/ 
+permalink: /:title/
 
 # Plugins (GitHub Pages supported)
 plugins:
@@ -28,35 +28,19 @@ plugins:
 twitter_username: MrJ_Olson
 github_username: Mr-JOlson
 
-# Collections (add more later if needed)
+# Collections
 collections:
   resources:
     output: true
-  posts:
-    output: true
 
-# Pagination (for blog)
-paginate: 10
-paginate_path: "/page/:num/"
-
-# Excludes
-exclude:
-  - .jekyll-cache/
-  - .bundle/
-  - vendor/
-  - Gemfile
-  - Gemfile.lock
-
-# Future posts (useful during development)
-future: false
-
-# Defaults for front matter
+# Defaults
 defaults:
   - scope:
       path: ""
     values:
       layout: "default"
-  - scope:
-      path: "_posts"
-    values:
-      layout: "post"
+
+exclude:
+  - .jekyll-cache/
+  - .bundle/
+  - vendor/
