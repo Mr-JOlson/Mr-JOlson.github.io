@@ -3,16 +3,17 @@ layout: default
 title: Physicsy | Jason Olson
 ---
 
-<div class="hero-banner">
+<figure class="hero-banner">
   <img
     src="{{ '/assets/img/banner.jpg' | relative_url }}"
-    alt="{{ site.title }}"
+    alt="{{ site.title }} — High School Science Resources"
     class="hero-banner__image"
     width="1200"
     height="400"
     loading="eager"
+    fetchpriority="high"
   >
-</div>
+</figure>
 
 <div class="hero-intro">
   <p class="hero__tagline">High School Science Resources from Gulf Breeze High School</p>

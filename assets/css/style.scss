@@ -28,18 +28,21 @@
 /* --- Hero Banner --- */
 
 .hero-banner {
-  margin: -4px 0 20px;
-  border-radius: 5px;
+  margin: -4px 0 24px;
+  padding: 0;
+  border-radius: 6px;
   overflow: hidden;
   line-height: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 12px rgba(26, 77, 122, 0.18);
+  aspect-ratio: 3 / 1;
 }
 
 .hero-banner__image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 /* --- Hero Intro --- */
