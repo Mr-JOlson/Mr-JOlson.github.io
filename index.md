@@ -3,8 +3,18 @@ layout: default
 title: Physicsy | Jason Olson
 ---
 
-<div class="hero">
-  <h1>Welcome to Physicsy</h1>
+<div class="hero-banner">
+  <img
+    src="{{ '/assets/img/banner.jpg' | relative_url }}"
+    alt="{{ site.title }}"
+    class="hero-banner__image"
+    width="1200"
+    height="400"
+    loading="eager"
+  >
+</div>
+
+<div class="hero-intro">
   <p class="hero__tagline">High School Science Resources from Gulf Breeze High School</p>
   <p class="hero__intro">Hi, I'm <strong>Jason Olson</strong>, a science teacher at Gulf Breeze High School in Florida. This site contains materials for my Physics 1 Honors, Biology, and Astronomy classes, along with robotics club projects and writing.</p>
 </div>
