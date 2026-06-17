@@ -6,11 +6,28 @@ description: >-
 url: "https://www.physicsy.com"
 baseurl: ""
 
+# Theme
+remote_theme: pages-themes/minimal@v0.2.0
+show_downloads: false
+
 # Author info
 author:
   name: Jason Olson
   email: olsonj@santarosa.k12.fl.us
   github_username: Mr-JOlson
+
+# Navigation (sidebar links)
+navigation:
+  - name: Home
+    link: /
+  - name: Physics
+    link: /physics1-honors/
+  - name: Biology
+    link: /biology-honors/
+  - name: Astronomy
+    link: /astronomy/
+  - name: Writing
+    link: /writing-projects/
 
 # Build settings
 markdown: kramdown
@@ -23,6 +40,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-github-metadata
+  - jekyll-remote-theme
 
 # SEO and social
 twitter_username: MrJ_Olson

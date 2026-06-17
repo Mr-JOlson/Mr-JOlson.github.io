@@ -1,0 +1,88 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* --- Sidebar Navigation --- */
+
+.site-nav {
+  margin: 20px 0;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav li {
+  margin: 0 0 6px;
+}
+
+.site-nav a {
+  display: block;
+  padding: 4px 0;
+  font-weight: 500;
+}
+
+/* --- Hero --- */
+
+.hero {
+  margin-bottom: 8px;
+}
+
+.hero h1 {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+  color: #1a4d7a;
+}
+
+.hero__tagline {
+  font-size: 1.05rem;
+  color: #555;
+  margin: 0 0 1em;
+}
+
+.hero__intro {
+  margin: 0;
+}
+
+/* --- Subject Cards --- */
+
+.subject-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin: 20px 0 32px;
+}
+
+.subject-card {
+  background: #fafbfc;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.subject-card__title {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: #1a4d7a;
+}
+
+.subject-card__desc {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.subject-card__link {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* --- Content headings --- */
+
+section h2 {
+  color: #1a4d7a;
+}
