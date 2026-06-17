@@ -1,3 +1,10 @@
-<footer>
-  <p>&copy; {{ 'now' | date: '%Y' }} Jason Olson | Gulf Breeze High School</p>
+<footer class="site-footer">
+  <p class="site-footer__contact">
+    <a href="mailto:{{ site.author.email }}">Contact Me</a>
+    <span class="site-footer__email">{{ site.author.email }}</span>
+  </p>
+  <p class="site-footer__copyright">
+    &copy; {{ 'now' | date: '%Y' }} Jason Olson. All rights reserved.
+  </p>
+  <p class="site-footer__school">Gulf Breeze High School</p>
 </footer>
