@@ -17,7 +17,7 @@ title: Physicsy | Jason Olson
 
 <div class="hero-intro">
   <p class="hero__tagline">High School Science Resources from Gulf Breeze High School</p>
-  <p class="hero__intro">Hi, I'm <strong>Jason Olson</strong>, a science teacher at Gulf Breeze High School in Florida. This site contains materials for my Physics 1 Honors, Biology, and Astronomy classes, along with robotics club projects and writing.</p>
+  <p class="hero__intro">Hi, I'm <strong>Jason Olson</strong>, a science teacher at Gulf Breeze High School in Florida. This site contains materials for my Physics 1 Honors, Biology, and Astronomy classes, along with an AI &amp; Robotics blog, classroom AI integration projects, and writing.</p>
 </div>
 
 ## Explore by Subject
@@ -43,8 +43,9 @@ title: Physicsy | Jason Olson
   </div>
 
   <div class="subject-card">
-    <h3 class="subject-card__title">Robotics Club</h3>
-    <p class="subject-card__desc">Humanoid robotics, Berkeley Humanoid Lite, and engineering projects.</p>
+    <h3 class="subject-card__title">AI &amp; Robotics Blog</h3>
+    <p class="subject-card__desc">Documenting the journey of building an AI student, humanoid robotics experiments, classroom AI integration, and related projects.</p>
+    <a href="/ai-robotics/" class="subject-card__link">Read the blog &rarr;</a>
   </div>
 
   <div class="subject-card">
@@ -59,7 +60,7 @@ title: Physicsy | Jason Olson
 
 ### Recent Updates
 
-*(Blog posts will appear here automatically)*
+{% include latest-posts.html limit=5 %}
 
 ---
 

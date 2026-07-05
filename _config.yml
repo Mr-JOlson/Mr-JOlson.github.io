@@ -2,7 +2,7 @@
 title: Physicsy | Jason Olson
 description: >-
   High school Physics, Biology, and Astronomy resources for Gulf Breeze High School students.
-  Lesson materials, robotics, writing projects, and more.
+  Lesson materials, AI & robotics projects, writing, and more.
 url: "https://www.physicsy.com"
 baseurl: ""
 
@@ -26,6 +26,8 @@ navigation:
     link: /biology-honors/
   - name: Astronomy
     link: /astronomy/
+  - name: AI & Robotics
+    link: /ai-robotics/
   - name: Writing
     link: /writing-projects/
 
