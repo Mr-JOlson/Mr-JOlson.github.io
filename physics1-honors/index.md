@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Physics 1 Honors | Physicsy
-description: Honors-level physics resources, problem sets, labs, and EOC preparation for Gulf Breeze High School students.
+description: Honors-level physics resources, problem sets, labs, and exam preparation for Gulf Breeze High School students.
 ---
 
 # Physics 1 Honors
@@ -12,7 +12,7 @@ Welcome to the Physics 1 Honors resource hub. Here you'll find materials aligned
 
 - **Problem sets** — Practice problems with worked solutions
 - **Labs** — Hands-on experiments and lab reports
-- **EOC preparation** — Review guides and practice assessments
+- **Exam preparation** — Review guides and practice assessments
 - **Unit guides** — Key concepts, formulas, and study tips
 - **Reference sheets** — Quick-access formula and constant tables
 

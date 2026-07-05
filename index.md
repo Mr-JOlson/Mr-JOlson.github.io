@@ -26,7 +26,7 @@ title: Physicsy | Jason Olson
 
   <div class="subject-card">
     <h3 class="subject-card__title">Physics</h3>
-    <p class="subject-card__desc">Honors-level materials, problem sets, labs, and EOC preparation.</p>
+    <p class="subject-card__desc">Honors-level materials, problem sets, labs, and exam preparation.</p>
     <a href="/physics1-honors/" class="subject-card__link">View resources &rarr;</a>
   </div>
 
