@@ -1,8 +1,4 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
-gem "jekyll-feed"
-gem "jekyll-seo-tag"
-gem "jekyll-sitemap"
-gem "jekyll-github-metadata"
-gem "jekyll-remote-theme", group: :jekyll_plugins
+# Match GitHub Pages' supported dependency set for reliable deploys.
+gem "github-pages", group: :jekyll_plugins

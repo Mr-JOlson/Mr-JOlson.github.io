@@ -5,24 +5,33 @@
 {% endcomment %}
 
 {% assign post_limit = include.limit | default: 5 %}
-{% if include.category %}
-  {% assign filtered_posts = site.posts | where_exp: "post", "post.categories contains include.category" %}
-{% else %}
-  {% assign filtered_posts = site.posts %}
-{% endif %}
+{% assign shown = 0 %}
+{% assign has_posts = false %}
 
-{% if filtered_posts.size > 0 %}
+{% if site.posts.size > 0 %}
 <ul class="post-list">
-  {% for post in filtered_posts limit: post_limit %}
+  {% for post in site.posts %}
+    {% if include.category %}
+      {% unless post.categories contains include.category %}
+        {% continue %}
+      {% endunless %}
+    {% endif %}
+    {% assign has_posts = true %}
+    {% assign shown = shown | plus: 1 %}
   <li class="post-list__item">
     <a href="{{ post.url | relative_url }}" class="post-list__title">{{ post.title }}</a>
-    <span class="post-list__date">{{ post.date | date: "%B %-d, %Y" }}</span>
+    <span class="post-list__date">{{ post.date | date: "%B %d, %Y" }}</span>
     {% if post.excerpt %}
     <p class="post-list__excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
     {% endif %}
   </li>
+    {% if shown == post_limit %}
+      {% break %}
+    {% endif %}
   {% endfor %}
 </ul>
-{% else %}
-<p class="post-list__empty"><em>Posts coming soon — stay tuned.</em></p>
 {% endif %}
+
+{% unless has_posts %}
+<p class="post-list__empty"><em>Posts coming soon — stay tuned.</em></p>
+{% endunless %}
