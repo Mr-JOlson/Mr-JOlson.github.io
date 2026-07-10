@@ -16,7 +16,7 @@ Playable projects built for curiosity, practice, and fun. These games pair class
     <h3 class="subject-card__title">Invaders Breakout</h3>
     <p class="subject-card__desc">A hybrid arcade game blending Space Invaders-style descent with Breakout brick barriers. Move the paddle, fire lasers, clear invaders, and grab power-ups as difficulty climbs.</p>
     <p class="subject-card__desc"><strong>Controls:</strong> Arrow keys / mouse / touch to move · Space / click / tap to fire</p>
-    <a href="https://mr-jolson.github.io/Invaders-Breakout/" class="subject-card__link" target="_blank" rel="noopener noreferrer">Play Invaders Breakout &rarr;</a>
+    <a href="https://www.physicsy.com/Invaders-Breakout/" class="subject-card__link" target="_blank" rel="noopener noreferrer">Play Invaders Breakout &rarr;</a>
   </div>
 
 </div>
