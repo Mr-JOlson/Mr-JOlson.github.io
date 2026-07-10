@@ -28,6 +28,8 @@ navigation:
     link: /astronomy/
   - name: "AI & Robotics"
     link: /ai-robotics/
+  - name: Games
+    link: /games/
   - name: Writing
     link: /writing-projects/
 

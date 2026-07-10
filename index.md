@@ -49,6 +49,12 @@ title: Physicsy | Jason Olson
   </div>
 
   <div class="subject-card">
+    <h3 class="subject-card__title">Games</h3>
+    <p class="subject-card__desc">Browser arcade projects for students and visitors—start with Invaders Breakout, a Space Invaders + Breakout hybrid.</p>
+    <a href="/games/" class="subject-card__link">Play games &rarr;</a>
+  </div>
+
+  <div class="subject-card">
     <h3 class="subject-card__title">Writing &amp; Philosophy</h3>
     <p class="subject-card__desc">Essays, satirical pieces, and thoughts on education, AI, and science.</p>
     <a href="/writing-projects/" class="subject-card__link">View resources &rarr;</a>
