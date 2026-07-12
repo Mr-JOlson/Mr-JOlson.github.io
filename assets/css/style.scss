@@ -101,6 +101,25 @@ section h2 {
   color: #1a4d7a;
 }
 
+/* --- Post / article figures (preserve natural aspect ratio; no stretch) --- */
+
+.post-figure {
+  margin: 0 0 1.5em;
+  text-align: center;
+  line-height: 0;
+}
+
+.post-figure img {
+  display: block;
+  max-width: min(100%, 420px);
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(26, 77, 122, 0.14);
+  object-fit: contain;
+}
+
 /* --- Post list (Recent Updates & blog hubs) --- */
 
 .post-list {

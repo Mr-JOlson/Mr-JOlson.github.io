@@ -7,12 +7,12 @@ excerpt: "A personal experiment in learning itself—local models, long-term mem
 image: /assets/img/ai-student-local-brain.jpg
 ---
 
-<figure>
+<figure class="post-figure">
   <img
     src="{{ '/assets/img/ai-student-local-brain.jpg' | relative_url }}"
-    alt="Laptop in a classroom displaying a neural network labeled Physics, Learning Process, First Principles, and Robotics, with a small robot on screen"
-    width="1168"
-    height="784"
+    alt="Laptop and tablet on a desk with a glowing second-brain knowledge graph of linked notes rising from the screens—Obsidian-style personal knowledge network"
+    width="864"
+    height="1152"
     loading="eager"
   >
 </figure>
