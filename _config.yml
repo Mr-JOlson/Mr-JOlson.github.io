@@ -1,7 +1,7 @@
 # _config.yml for Physicsy Website
 title: Physicsy | Jason Olson
 description: >-
-  High school Physics, Biology, and Astronomy resources for Gulf Breeze High School students.
+  High school Physics, Earth-Space Science, and Astronomy resources for Gulf Breeze High School students.
   Lesson materials, AI & robotics projects, writing, and more.
 url: "https://www.physicsy.com"
 baseurl: ""
@@ -22,8 +22,8 @@ navigation:
     link: /
   - name: Physics
     link: /physics1-honors/
-  - name: Biology
-    link: /biology-honors/
+  - name: Earth-Space
+    link: /earth-space-science/
   - name: Astronomy
     link: /astronomy/
   - name: "AI & Robotics"

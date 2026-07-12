@@ -8,7 +8,7 @@ excerpt: "Why I'm building an open-source AI student and what I hope to learn al
 
 This is the first entry in a blog I'll use to document an ambitious side project: creating an **open-source AI student**—a system designed to learn, ask questions, and eventually assist in a real high school science classroom.
 
-I'm a physics and biology teacher, not a Silicon Valley engineer. That means this journey will be messy, iterative, and grounded in what actually happens when you put new technology in front of teenagers. I plan to share:
+I'm a physics and Earth-Space Science teacher, not a Silicon Valley engineer. That means this journey will be messy, iterative, and grounded in what actually happens when you put new technology in front of teenagers. I plan to share:
 
 - Technical progress on the AI student architecture
 - Robotics experiments (including humanoid platforms)

@@ -17,7 +17,7 @@ title: Physicsy | Jason Olson
 
 <div class="hero-intro">
   <p class="hero__tagline">High School Science Resources from Gulf Breeze High School</p>
-  <p class="hero__intro">Hi, I'm <strong>Jason Olson</strong>, a science teacher at Gulf Breeze High School in Florida. This site contains materials for my Physics 1 Honors, Biology, and Astronomy classes, along with an AI &amp; Robotics blog, classroom AI integration projects, and writing.</p>
+  <p class="hero__intro">Hi, I'm <strong>Jason Olson</strong>, a science teacher at Gulf Breeze High School in Florida. This site contains materials for my Physics 1 Honors, Earth-Space Science, and Astronomy classes, along with an AI &amp; Robotics blog, classroom AI integration projects, and writing.</p>
 </div>
 
 ## Explore by Subject
@@ -31,9 +31,9 @@ title: Physicsy | Jason Olson
   </div>
 
   <div class="subject-card">
-    <h3 class="subject-card__title">Biology</h3>
-    <p class="subject-card__desc">Comprehensive resources aligned with Florida standards.</p>
-    <a href="/biology-honors/" class="subject-card__link">View resources &rarr;</a>
+    <h3 class="subject-card__title">Earth-Space Science</h3>
+    <p class="subject-card__desc">Geology, oceans, weather, climate, and space science—aligned with Florida standards.</p>
+    <a href="/earth-space-science/" class="subject-card__link">View resources &rarr;</a>
   </div>
 
   <div class="subject-card">
