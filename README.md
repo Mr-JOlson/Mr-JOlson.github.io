@@ -7,7 +7,7 @@ Jekyll-based site for **Jason Olson** (Gulf Breeze High School) at [physicsy.com
 | Section | Path |
 |---------|------|
 | Physics 1 Honors | `/physics1-honors/` |
-| Earth-Space Science | `/earth-space-science/` |
+| Biology | `/biology/` |
 | Astronomy | `/astronomy/` |
 | AI & Robotics Blog | `/ai-robotics/` |
 | Games | `/games/` |
