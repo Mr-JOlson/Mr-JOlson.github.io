@@ -50,7 +50,7 @@ title: Physicsy | Jason Olson
 
   <div class="subject-card">
     <h3 class="subject-card__title">Games</h3>
-    <p class="subject-card__desc">Browser arcade projects for students and visitors—start with Invaders Breakout, a Space Invaders + Breakout hybrid.</p>
+    <p class="subject-card__desc">Browser games for class and for fun: Vector Fleet! for vectors and projectile motion, and Invaders Breakout.</p>
     <a href="/games/" class="subject-card__link">Play games &rarr;</a>
   </div>
 

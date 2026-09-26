@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Games | Physicsy
-description: Educational and arcade games from Physicsy — play Invaders Breakout and more.
+description: Educational and arcade games from Physicsy — play Vector Fleet! and Invaders Breakout.
 ---
 
 # Games
@@ -11,6 +11,13 @@ Playable projects built for curiosity, practice, and fun. These games pair class
 ## Available Games
 
 <div class="subject-grid">
+
+  <div class="subject-card">
+    <h3 class="subject-card__title">Vector Fleet!</h3>
+    <p class="subject-card__desc">Eight ships share a 100 m grid. Each round, read every ship's position and velocity, add the current and the wind, and enter the elevation and direction for a 28 m/s shot. Start plays the ten-second flight and checks the hit.</p>
+    <p class="subject-card__desc"><strong>For class:</strong> 0° is +x and 90° is +y. Positions and vectors are shown to the nearest hundredth. A hit lands within 0.01 m.</p>
+    <a href="https://www.physicsy.com/vector-fleet-game/" class="subject-card__link" target="_blank" rel="noopener noreferrer">Play Vector Fleet! &rarr;</a>
+  </div>
 
   <div class="subject-card">
     <h3 class="subject-card__title">Invaders Breakout</h3>
