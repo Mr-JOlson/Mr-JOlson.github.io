@@ -1,68 +1,67 @@
-# _config.yml for Physicsy Website
-title: Physicsy | Jason Olson
+# Physicsy — personal site of Jason Olson
+title: Physicsy
+tagline: SI, robotics, games, and writing.
 description: >-
-  High school Physics, Biology, and Astronomy resources for Gulf Breeze High School students.
-  Lesson materials, AI & robotics projects, writing, and more.
+  Personal site of Jason Olson. The public record of Minerva, an SI student
+  growing into a robotic body, along with games and writing on science and philosophy.
 url: "https://www.physicsy.com"
 baseurl: ""
+lang: en
 
-# Theme
-remote_theme: pages-themes/minimal@v0.2.0
-show_downloads: false
-
-# Author info
 author:
   name: Jason Olson
-  email: olsonj@santarosa.k12.fl.us
   github_username: Mr-JOlson
 
-# Navigation (sidebar links)
+github_username: Mr-JOlson
+twitter_username: MrJ_Olson
+
 navigation:
   - name: Home
     link: /
-  - name: Physics
-    link: /physics1-honors/
-  - name: Biology
-    link: /biology/
-  - name: Astronomy
-    link: /astronomy/
-  - name: "AI & Robotics"
-    link: /ai-robotics/
+    tone: home
+  - name: SI & Robotics
+    link: /si-robotics/
+    tone: si
   - name: Games
     link: /games/
+    tone: games
   - name: Writing
-    link: /writing-projects/
+    link: /writing/
+    tone: writing
+  - name: Ideas
+    link: /ideas-and-reflections/
+    tone: ideas
+    title: Ideas and reflections about science and philosophy
 
-# Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
 
-# Plugins (GitHub Pages supported)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-github-metadata
-  - jekyll-remote-theme
+  - jekyll-redirect-from
 
-# SEO and social
-twitter_username: MrJ_Olson
-github_username: Mr-JOlson
+sass:
+  style: compressed
 
-# Collections
-collections:
-  resources:
-    output: true
-
-# Defaults
 defaults:
   - scope:
       path: ""
     values:
-      layout: "default"
+      layout: default
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
 
 exclude:
   - .jekyll-cache/
   - .bundle/
   - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - AGENTS.md

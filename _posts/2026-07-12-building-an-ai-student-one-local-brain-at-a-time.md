@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: post
 title: "Building an AI Student: One Local Brain at a Time"
 date: 2026-07-12
-categories: [ai-robotics]
+categories: [si-robotics]
 excerpt: "A personal experiment in learning itself—local models, long-term memory, and the first steps toward a synthetic student that may one day have a robotic body."
 image: /assets/img/ai-student-local-brain.jpg
 ---
@@ -45,9 +45,7 @@ For now the plan is simple: give the entity a starting persona, run regular "cla
 
 The robotics club kids are going to love poking at this. It's the kind of weird, hands-on, interdisciplinary project that makes high school science feel alive.
 
-I'll keep posting updates here as the experiment unfolds—architecture decisions, what works, what breaks, and what it teaches me about learning itself. If you're tinkering with similar local setups, feel free to [reach out](mailto:olsonj@santarosa.k12.fl.us). One step at a time.
+I'll keep posting updates here as the experiment unfolds—architecture decisions, what works, what breaks, and what it teaches me about learning itself. One step at a time.
 
 *— Jason Olson*  
 *Gulf Breeze, Florida · July 2026*
-
-[← Back to AI & Robotics Blog](/ai-robotics/)

@@ -1,37 +1,36 @@
 {% comment %}
   Usage:
     {% include latest-posts.html limit=5 %}
-    {% include latest-posts.html limit=10 category="ai-robotics" %}
+    {% include latest-posts.html limit=10 category="si-robotics" %}
 {% endcomment %}
 
 {% assign post_limit = include.limit | default: 5 %}
 {% assign shown = 0 %}
-{% assign has_posts = false %}
-
-{% if site.posts.size > 0 %}
-<ul class="post-list">
-  {% for post in site.posts %}
-    {% if include.category %}
-      {% unless post.categories contains include.category %}
-        {% continue %}
-      {% endunless %}
-    {% endif %}
-    {% assign has_posts = true %}
-    {% assign shown = shown | plus: 1 %}
+{% capture items %}
+{% for post in site.posts %}
+  {% if include.category %}
+    {% unless post.categories contains include.category %}
+      {% continue %}
+    {% endunless %}
+  {% endif %}
+  {% assign shown = shown | plus: 1 %}
+  {% if shown > post_limit %}
+    {% break %}
+  {% endif %}
   <li class="post-list__item">
     <a href="{{ post.url | relative_url }}" class="post-list__title">{{ post.title }}</a>
-    <span class="post-list__date">{{ post.date | date: "%B %d, %Y" }}</span>
+    <time class="post-list__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
     {% if post.excerpt %}
     <p class="post-list__excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
     {% endif %}
   </li>
-    {% if shown == post_limit %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
+{% endfor %}
+{% endcapture %}
+{% assign rendered = items | strip %}
+{% if rendered != "" %}
+<ul class="post-list">
+{{ items }}
 </ul>
+{% else %}
+<p class="post-list__empty">No notes here yet.</p>
 {% endif %}
-
-{% unless has_posts %}
-<p class="post-list__empty"><em>Posts coming soon — stay tuned.</em></p>
-{% endunless %}

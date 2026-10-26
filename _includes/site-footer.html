@@ -1,8 +1,10 @@
-<footer>
-  <p>
-    <a href="mailto:{{ site.author.email }}">Contact Me</a><br>
-    <small>{{ site.author.email }}</small>
-  </p>
-  <p><small>&copy; {{ 'now' | date: '%Y' }} {{ site.author.name }}. All rights reserved.</small></p>
-  <p><small>Gulf Breeze High School</small></p>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p class="site-footer__about">{{ site.author.name }}. Synthetic intelligence, robotics, and writing.</p>
+    <p class="site-footer__links">
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a href="{{ '/feed.xml' | relative_url }}">Feed</a>
+    </p>
+    <p class="site-footer__copy">&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}</p>
+  </div>
 </footer>

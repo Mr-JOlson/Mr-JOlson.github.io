@@ -1,78 +1,38 @@
 ---
 layout: default
-title: Physicsy | Jason Olson
+description: Personal site of Jason Olson. The public record of Minerva, an SI student growing into a robotic body, plus games and writing on science and philosophy.
 ---
 
-<figure class="hero-banner">
-  <img
-    src="{{ '/assets/img/banner.jpg' | relative_url }}"
-    alt="{{ site.title }} — High School Science Resources"
-    class="hero-banner__image"
-    width="1200"
-    height="400"
-    loading="eager"
-    fetchpriority="high"
-  >
-</figure>
-
-<div class="hero-intro">
-  <p class="hero__tagline">High School Science Resources from Gulf Breeze High School</p>
-  <p class="hero__intro">Hi, I'm <strong>Jason Olson</strong>, a science teacher at Gulf Breeze High School in Florida. This site contains materials for my Physics 1 Honors, Biology, and Astronomy Solar/Galactic Honors classes, along with an AI &amp; Robotics blog, classroom AI integration projects, and writing.</p>
+<div class="home-lead">
+  <p class="kicker">Jason Olson</p>
+  <h1>A record of ongoing experiments.</h1>
+  <p class="lede">Physicsy is the public notebook for Minerva, a synthetic-intelligence student growing into a robotic body, built with students. The same shelf holds games, longer writing, and notes on science and philosophy.</p>
 </div>
 
-## Explore by Subject
+<section class="card-grid" aria-label="Sections">
+  <a class="card" data-tone="si" href="{{ '/si-robotics/' | relative_url }}">
+    <p class="card__index">SI</p>
+    <h2 class="card__title">SI &amp; Robotics</h2>
+    <p class="card__text">Minerva: a local model, a persistent memory, and the body being built around her.</p>
+  </a>
+  <a class="card" data-tone="games" href="{{ '/games/' | relative_url }}">
+    <p class="card__index">Play</p>
+    <h2 class="card__title">Games</h2>
+    <p class="card__text">Vector Fleet and Invaders Breakout. Browser experiments, nothing to install.</p>
+  </a>
+  <a class="card" data-tone="writing" href="{{ '/writing/' | relative_url }}">
+    <p class="card__index">Prose</p>
+    <h2 class="card__title">Writing</h2>
+    <p class="card__text">Longer pieces, satire, and drafts tied to books in progress.</p>
+  </a>
+  <a class="card" data-tone="ideas" href="{{ '/ideas-and-reflections/' | relative_url }}">
+    <p class="card__index">Notes</p>
+    <h2 class="card__title">Ideas and reflections</h2>
+    <p class="card__text">Physics, astronomy, systems, mind, education, and first principles.</p>
+  </a>
+</section>
 
-<div class="subject-grid">
-
-  <div class="subject-card">
-    <h3 class="subject-card__title">Physics</h3>
-    <p class="subject-card__desc">Honors-level materials, problem sets, labs, and exam preparation.</p>
-    <a href="/physics1-honors/" class="subject-card__link">View resources &rarr;</a>
-  </div>
-
-  <div class="subject-card">
-    <h3 class="subject-card__title">Biology</h3>
-    <p class="subject-card__desc">Cells, genetics, ecology, and evolution—aligned with Florida standards.</p>
-    <a href="/biology/" class="subject-card__link">View resources &rarr;</a>
-  </div>
-
-  <div class="subject-card">
-    <h3 class="subject-card__title">Astronomy</h3>
-    <p class="subject-card__desc">Solar and galactic honors course materials.</p>
-    <a href="/astronomy/" class="subject-card__link">View resources &rarr;</a>
-  </div>
-
-  <div class="subject-card">
-    <h3 class="subject-card__title">AI &amp; Robotics Blog</h3>
-    <p class="subject-card__desc">Documenting the journey of building an AI student, humanoid robotics experiments, classroom AI integration, and related projects.</p>
-    <a href="/ai-robotics/" class="subject-card__link">Read the blog &rarr;</a>
-  </div>
-
-  <div class="subject-card">
-    <h3 class="subject-card__title">Games</h3>
-    <p class="subject-card__desc">Browser games for class and for fun: Vector Fleet! for vectors and projectile motion, and Invaders Breakout.</p>
-    <a href="/games/" class="subject-card__link">Play games &rarr;</a>
-  </div>
-
-  <div class="subject-card">
-    <h3 class="subject-card__title">Writing &amp; Philosophy</h3>
-    <p class="subject-card__desc">Essays, satirical pieces, and thoughts on education, AI, and science.</p>
-    <a href="/writing-projects/" class="subject-card__link">View resources &rarr;</a>
-  </div>
-
-</div>
-
----
-
-### Recent Updates
-
-{% include latest-posts.html limit=5 %}
-
----
-
-### For Students & Parents
-
-- Looking for specific class resources? Use the navigation above.
-- Questions? Feel free to [reach out](mailto:olsonj@santarosa.k12.fl.us).
-
-*Encouraging excellence through science and curiosity.*
+<section class="recent" aria-labelledby="recent-notes">
+  <h2 id="recent-notes">Recent notes</h2>
+  {% include latest-posts.html limit=5 %}
+</section>

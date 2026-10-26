@@ -28,16 +28,20 @@ Existing SI/robotics posts, game source, and writing should be preserved and re-
 
 ## Theme and design
 
-Replace the current minimal school-resource look. Goal: a personal, contemplative site that can grow with the projects. Prefer a clean, modern layout (mobile-first, good typography, dark-mode friendly). Accent the sense of ongoing experiment rather than curriculum. Exact palette and remote theme versus custom CSS can be decided in the rebuild; the constraint is that the result no longer reads as a classroom portal.
+Custom layout and CSS, not the Minimal remote theme. The site should feel personal and contemplative: mobile-first, strong typography, and able to grow with the projects. It should read as an ongoing experiment, not a classroom portal.
+
+Palette: muted pigments on warm paper — verdigris, ochre, clay, and indigo — with a dark theme that uses the same hues. Color is carried by washes, rules, and section marks. Body text stays ink on paper. The visitor’s system preference sets light or dark; the header control overrides it and remembers the choice.
+
+Styles live in `assets/css/style.scss`. Layouts live in `_layouts/`.
 
 ## Stack
 
-- Jekyll + GitHub Pages (current remote theme can be swapped).
+- Jekyll + GitHub Pages (custom layout, no remote theme).
 - Posts: `_posts/YYYY-MM-DD-title.md`
 - Deployed from `main`
 - Local: `bundle install && bundle exec jekyll serve`
 
-See `AGENTS.md` for agent workflow conventions; that file will also need a short update once the new purpose is settled.
+See `AGENTS.md` for agent workflow conventions. Purpose and theme decisions are recorded there.
 
 ## About
 

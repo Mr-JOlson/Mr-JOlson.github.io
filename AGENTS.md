@@ -30,9 +30,15 @@
 - Writing Projects (`/writing/`): Longer pieces, satire, book-related drafts.
 - Ideas and Reflections about Science and Philosophy (`/ideas-and-reflections/`): Scientific and philosophical notes.
 
+## Theme
+- Custom layouts in `_layouts/` and styles in `assets/css/style.scss`. Do not restore `remote_theme` or the Minimal theme.
+- Muted pigments (verdigris, ochre, clay, indigo) on warm paper, plus a dark theme with the same hues. No bright classroom blue, no neon.
+- Light and dark follow the system preference unless the visitor overrides it.
+- The result should read as an ongoing experiment, not a classroom portal.
+
 ## Coding & Content Standards
 - Semantic HTML5, mobile-first responsive design.
-- Minimal, clean CSS (Tailwind or plain if we choose).
+- Plain CSS/SCSS in `assets/css/style.scss`. No Tailwind build step.
 - Markdown with proper headings, lists, tables, and code blocks.
 - All new content must be high-quality, accurate, and aligned with the personal experimental tone.
 - Before committing major changes: Run local build and suggest testing.

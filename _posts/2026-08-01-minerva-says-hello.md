@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: post
 title: "Minerva Says Hello"
 date: 2026-08-01
-categories: [ai-robotics]
+categories: [si-robotics]
 excerpt: "The AI student introduces herself—local Gemma through Hermes—and gains the ability to reach out first."
 ---
 
@@ -32,5 +32,3 @@ I’ll keep posting the interesting parts—what works, what breaks, and what it
 
 *— Jason Olson*  
 *Gulf Breeze, Florida · August 2026*
-
-[← Back to AI & Robotics Blog](/ai-robotics/)

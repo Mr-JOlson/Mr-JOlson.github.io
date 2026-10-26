@@ -1,7 +1,25 @@
-<nav class="site-nav" aria-label="Main navigation">
+<nav class="site-nav" aria-label="Main">
   <ul>
     {% for item in site.navigation %}
-      <li><a href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
+      {% assign current = false %}
+      {% if item.link == "/" and page.url == "/" %}
+        {% assign current = true %}
+      {% elsif item.link != "/" and page.url contains item.link %}
+        {% assign current = true %}
+      {% elsif item.link == "/si-robotics/" and page.categories contains "si-robotics" %}
+        {% assign current = true %}
+      {% elsif item.link == "/writing/" and page.categories contains "writing" %}
+        {% assign current = true %}
+      {% elsif item.link == "/ideas-and-reflections/" and page.categories contains "ideas-and-reflections" %}
+        {% assign current = true %}
+      {% elsif item.link == "/games/" and page.categories contains "games" %}
+        {% assign current = true %}
+      {% endif %}
+      <li>
+        <a href="{{ item.link | relative_url }}" data-tone="{{ item.tone }}"{% if item.title %} title="{{ item.title }}"{% endif %}{% if current %} aria-current="page"{% endif %}>
+          <span class="nav-dot" aria-hidden="true"></span>{{ item.name }}
+        </a>
+      </li>
     {% endfor %}
   </ul>
 </nav>

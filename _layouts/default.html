@@ -1,37 +1,42 @@
+{%- assign section = "page" -%}
+{%- if page.url == "/" -%}
+  {%- assign section = "home" -%}
+{%- elsif page.url contains "/si-robotics/" or page.categories contains "si-robotics" -%}
+  {%- assign section = "si" -%}
+{%- elsif page.url contains "/games/" or page.categories contains "games" -%}
+  {%- assign section = "games" -%}
+{%- elsif page.url contains "/writing/" or page.categories contains "writing" -%}
+  {%- assign section = "writing" -%}
+{%- elsif page.url contains "/ideas-and-reflections/" or page.categories contains "ideas-and-reflections" -%}
+  {%- assign section = "ideas" -%}
+{%- endif -%}
+{%- assign css_v = site.time | date: "%s" -%}
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    {% include head-custom.html %}
+    <script>
+      try {
+        var storedTheme = localStorage.getItem("physicsy-theme");
+        if (storedTheme === "light" || storedTheme === "dark") {
+          document.documentElement.setAttribute("data-theme", storedTheme);
+        }
+      } catch (e) {}
+    </script>
+    {% seo %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: css_v | relative_url }}">
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-
-        {% if site.logo %}
-          <img src="{{ site.logo | relative_url }}" alt="Logo" />
-        {% endif %}
-
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
-        {% include navigation.html %}
-      </header>
-      <section>
-
+  <body data-section="{{ section }}"{% if page.url == "/" %} class="is-home"{% endif %}>
+    <a class="skip-link" href="#content">Skip to content</a>
+    {% include site-header.html %}
+    <main id="content" class="site-main">
       {{ content }}
-
-      </section>
-      {% include site-footer.html %}
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    </main>
+    {% include site-footer.html %}
+    <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
   </body>
 </html>

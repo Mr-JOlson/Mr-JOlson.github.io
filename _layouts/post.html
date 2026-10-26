@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="essay">
+  <header class="essay__header">
+    {% if page.categories contains "si-robotics" %}
+      <p class="kicker"><a href="{{ '/si-robotics/' | relative_url }}">SI &amp; Robotics</a></p>
+    {% elsif page.categories contains "writing" %}
+      <p class="kicker"><a href="{{ '/writing/' | relative_url }}">Writing</a></p>
+    {% elsif page.categories contains "ideas-and-reflections" %}
+      <p class="kicker"><a href="{{ '/ideas-and-reflections/' | relative_url }}">Ideas and reflections</a></p>
+    {% elsif page.categories contains "games" %}
+      <p class="kicker"><a href="{{ '/games/' | relative_url }}">Games</a></p>
+    {% endif %}
+    <h1>{{ page.title }}</h1>
+    <p class="essay__meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+  </header>
+  <div class="essay__body">
+    {{ content }}
+  </div>
+</article>

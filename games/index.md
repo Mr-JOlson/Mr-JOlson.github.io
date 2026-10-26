@@ -1,39 +1,29 @@
 ---
 layout: default
-title: Games | Physicsy
-description: Educational and arcade games from Physicsy — play Vector Fleet! and Invaders Breakout.
+title: Games
+description: Interactive experiments from Physicsy — Vector Fleet and Invaders Breakout.
 ---
 
 # Games
 
-Playable projects built for curiosity, practice, and fun. These games pair classic arcade mechanics with clean, browser-based design—no install required.
+Two browser experiments. Nothing to install.
 
-## Available Games
+<div class="card-grid">
 
-<div class="subject-grid">
+  <article class="card" data-tone="si">
+    <p class="card__index">Vectors</p>
+    <h2>Vector Fleet!</h2>
+    <p>Eight ships share a 200 m grid. Each round, read every ship's position and velocity, add the current and the wind, and enter the elevation and direction for a 35 m/s shot. Start plays the ten-second flight and checks the hit.</p>
+    <p>0° is +x and 90° is +y. Positions and vectors are shown to the nearest hundredth. A hit lands within 1 m.</p>
+    <p><a href="https://www.physicsy.com/vector-fleet-game/">Play Vector Fleet!</a></p>
+  </article>
 
-  <div class="subject-card">
-    <h3 class="subject-card__title">Vector Fleet!</h3>
-    <p class="subject-card__desc">Eight ships share a 200 m grid. Each round, read every ship's position and velocity, add the current and the wind, and enter the elevation and direction for a 35 m/s shot. Start plays the ten-second flight and checks the hit.</p>
-    <p class="subject-card__desc"><strong>For class:</strong> 0° is +x and 90° is +y. Positions and vectors are shown to the nearest hundredth. A hit lands within 1 m.</p>
-    <a href="https://www.physicsy.com/vector-fleet-game/" class="subject-card__link" target="_blank" rel="noopener noreferrer">Play Vector Fleet! &rarr;</a>
-  </div>
-
-  <div class="subject-card">
-    <h3 class="subject-card__title">Invaders Breakout</h3>
-    <p class="subject-card__desc">A hybrid arcade game blending Space Invaders-style descent with Breakout ball physics. Launch a ball from the paddle, shatter brick barriers, and destroy invaders—specialty 2× / 3× / 4× bricks multiply every ball on screen.</p>
-    <p class="subject-card__desc"><strong>Controls:</strong> Arrow keys / mouse / touch to move · Space / click / tap to launch a ball (only when none are active)</p>
-    <a href="https://www.physicsy.com/Invaders-Breakout/" class="subject-card__link" target="_blank" rel="noopener noreferrer">Play Invaders Breakout &rarr;</a>
-  </div>
+  <article class="card" data-tone="games">
+    <p class="card__index">Arcade</p>
+    <h2>Invaders Breakout</h2>
+    <p>A hybrid of Space Invaders descent and Breakout ball physics. Launch a ball from the paddle, shatter brick barriers, and destroy invaders. Specialty 2× / 3× / 4× bricks multiply every ball on screen.</p>
+    <p>Arrow keys, mouse, or touch move the paddle. Space, click, or tap launches a ball, and only when none are active.</p>
+    <p><a href="https://www.physicsy.com/Invaders-Breakout/">Play Invaders Breakout</a></p>
+  </article>
 
 </div>
-
----
-
-### More coming soon
-
-Additional classroom-friendly games and STEM mini-challenges will appear here over time.
-
----
-
-[← Back to Home](/)

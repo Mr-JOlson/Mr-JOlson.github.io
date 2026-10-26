@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: post
 title: "Welcome to the AI & Robotics Blog"
 date: 2026-07-05
-categories: [ai-robotics]
+categories: [si-robotics]
 excerpt: "Why I'm building an open-source AI student and what I hope to learn along the way."
 ---
 
