@@ -1,10 +1,11 @@
-# AGENTS.md - Instructions for Grok Build (Composer 2.5) and Other AI Agents
+# AGENTS.md - Instructions for Grok Build and Other AI Agents
 
 ## Project Overview
-- This is the official **Physicsy** website for Jason Olson (Gulf Breeze High School science teacher).
-- Purpose: Professional, clean, fast-loading site for students, parents, and colleagues featuring class resources, blog posts, robotics club info, writing projects, and AI/philosophy content.
-- Stack: Jekyll + GitHub Pages (static site). Goal = maximum maintainability with weekly updates.
-- Tone: Professional yet approachable, clear, encouraging for students. Emphasize excellence, first-principles thinking, and curiosity.
+- This is **Physicsy**, the personal site of Jason Olson.
+- Purpose: Public record of the Minerva project (SI student growing into a robotic body, built with students), interactive games, writing projects, and ideas and reflections about science and philosophy.
+- Formerly a high-school resource hub; academic course pages have been removed.
+- Stack: Jekyll + GitHub Pages (static site). Goal = maximum maintainability.
+- Tone: Direct, contemplative, first-principles. Personal and experimental rather than classroom-facing.
 
 ## Jekyll & GitHub Pages Rules
 - Build command: `bundle exec jekyll build` (or `jekyll build`).
@@ -23,11 +24,17 @@
 - `/assets/css/` → main styles
 - `/assets/img/` → optimized images
 
+## Sections
+- SI & Robotics (`/si-robotics/`): Minerva project — local SI student and robotic body.
+- Games (`/games/`): Interactive experiments (Vector Fleet, Invaders Breakout).
+- Writing Projects (`/writing/`): Longer pieces, satire, book-related drafts.
+- Ideas and Reflections about Science and Philosophy (`/ideas-and-reflections/`): Scientific and philosophical notes.
+
 ## Coding & Content Standards
 - Semantic HTML5, mobile-first responsive design.
 - Minimal, clean CSS (Tailwind or plain if we choose).
 - Markdown with proper headings, lists, tables, and code blocks.
-- All new content must be high-quality, accurate, and aligned with teaching/STEM values.
+- All new content must be high-quality, accurate, and aligned with the personal experimental tone.
 - Before committing major changes: Run local build and suggest testing.
 
 ## Workflow Requirements for Grok Build
@@ -36,10 +43,11 @@
 - Use feature branches for layout redesigns or major refactors (`git checkout -b feature/new-design`).
 - After changes, remind to run `bundle exec jekyll serve` for local preview.
 - Respect existing content — improve organization without losing information.
+- Do not reintroduce school-specific course pages or student/parent framing.
 
 ## Content Guidelines
-- Prioritize clarity and educational value.
-- Include calls to action for students (e.g., "Try this practice problem", links to resources).
+- Prioritize clarity and first-principles thinking.
+- No calls to action aimed at high-school students unless the content itself is explicitly about the Minerva/robotics work with students.
 - Update copyright/year dynamically where possible.
 - SEO-friendly titles and descriptions.
 
