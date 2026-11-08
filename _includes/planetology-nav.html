@@ -1,0 +1,8 @@
+<nav class="pair-nav{% if include.end %} pair-nav--end{% endif %}" aria-label="Planet pairs">
+  <a href="{{ '/planetology/' | relative_url }}"{% if page.pair == "index" %} aria-current="page"{% endif %}>Timeline</a>
+  <a href="{{ '/planetology/mercury-mars/' | relative_url }}"{% if page.pair == "mercury-mars" %} aria-current="page"{% endif %}>Mercury–Mars</a>
+  <a href="{{ '/planetology/earth-venus/' | relative_url }}"{% if page.pair == "earth-venus" %} aria-current="page"{% endif %}>Earth–Venus</a>
+  <a href="{{ '/planetology/jupiter-uranus/' | relative_url }}"{% if page.pair == "jupiter-uranus" %} aria-current="page"{% endif %}>Jupiter–Uranus</a>
+  <a href="{{ '/planetology/saturn-neptune/' | relative_url }}"{% if page.pair == "saturn-neptune" %} aria-current="page"{% endif %}>Saturn–Neptune</a>
+  <a href="{{ '/planetology/pluto-ceres-eris/' | relative_url }}"{% if page.pair == "dwarfs" %} aria-current="page"{% endif %}>Pluto–Ceres–Eris</a>
+</nav>

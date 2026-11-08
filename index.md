@@ -30,6 +30,11 @@ description: Personal site of Jason Olson. The public record of Minerva, an SI s
     <h2 class="card__title">Ideas and reflections</h2>
     <p class="card__text">Physics, astronomy, systems, mind, education, and first principles.</p>
   </a>
+  <a class="card card--wide" data-tone="planets" href="{{ '/planetology/' | relative_url }}">
+    <p class="card__index">Worlds</p>
+    <h2 class="card__title">Planetology</h2>
+    <p class="card__text">Five pairs of worlds, one timeline. Formation, collisions, atmospheres, and what the Sun does next.</p>
+  </a>
 </section>
 
 <section class="recent" aria-labelledby="recent-notes">

@@ -1,0 +1,67 @@
+---
+layout: default
+title: Planetology
+description: Five pairs of worlds, four questions, one timeline. Formation, collisions, atmospheres, and what the Sun does next.
+planetology: true
+pair: index
+---
+
+<article class="planetology" data-pair="index">
+  <p class="kicker">Physicsy</p>
+  <h1>Planetology</h1>
+  <p class="contrast-line">Five pairs. The same four questions. One history of the solar system.</p>
+  <p class="method">Each page puts two worlds side by side. The short answer is on the page. The controls only open a contrast that is already there. Where a note called something a hypothesis, or left it open, that status stays visible.</p>
+
+  {% include planetology-nav.html %}
+
+  <ol class="questions">
+    <li><strong>Formation pathway</strong> How the body was built, and what stopped it.</li>
+    <li><strong>Collisions and captures</strong> The hits and the moons that were grabbed, not grown.</li>
+    <li><strong>Volatiles and air</strong> Water, ice, hydrogen, and what stayed in the atmosphere.</li>
+    <li><strong>A constrained future</strong> What solar evolution or a changing orbit still allows.</li>
+  </ol>
+
+  <ol class="spine">
+    <li style="--spine: var(--clay)">
+      <a href="{{ '/planetology/mercury-mars/' | relative_url }}">
+        <p class="idx">Inner rock</p>
+        <h2>Mercury and Mars</h2>
+        <p>A hit-and-run metal core beside a smaller world that kept its rock. Densities 5.43 and 3.93 g/cm³.</p>
+      </a>
+    </li>
+    <li style="--spine: var(--verdigris)">
+      <a href="{{ '/planetology/earth-venus/' | relative_url }}">
+        <p class="idx">Twin start</p>
+        <h2>Earth and Venus</h2>
+        <p>A Moon-forming impact and oceans that stayed, beside collisions, volcanism, and water loss. The same red-giant ending.</p>
+      </a>
+    </li>
+    <li style="--spine: var(--ochre)">
+      <a href="{{ '/planetology/jupiter-uranus/' | relative_url }}">
+        <p class="idx">Gas on a clock</p>
+        <h2>Jupiter and Uranus</h2>
+        <p>Runaway hydrogen for the one that grew fast. A thin gas skin, a 98° tilt, and heavy ices for the one that grew late.</p>
+      </a>
+    </li>
+    <li style="--spine: var(--indigo)">
+      <a href="{{ '/planetology/saturn-neptune/' | relative_url }}">
+        <p class="idx">Disk and ice</p>
+        <h2>Saturn and Neptune</h2>
+        <p>95 Earths of gas giant beside 17 Earths of ice giant. Pebbles, Triton, and rings that are already draining.</p>
+      </a>
+    </li>
+    <li style="--spine: var(--clay)">
+      <a href="{{ '/planetology/pluto-ceres-eris/' | relative_url }}">
+        <p class="idx">Dwarf planets</p>
+        <h2>Pluto, Ceres, and Eris</h2>
+        <p>Kiss-and-capture, a cratered asteroid-belt world, and an impact moon. Atmospheres too thin to warm the ice.</p>
+      </a>
+    </li>
+  </ol>
+
+  <footer class="sources">
+    <h2>Where the pages come from</h2>
+    <p>Mercury and Mars, from Giulia Santopietro and Madison Carroll. Earth and Venus, from Rowen Groeneweg and Jaxson Foreman. Jupiter and Uranus, from Addison Dean and Emma Terrill. Saturn and Neptune, from Parker Estel and Zara Tavai. Pluto, Ceres, and Eris, from Lucas Noury and Andrew Davis.</p>
+    <p>The pages use their numbers, mission names, and open questions. They do not add a new model.</p>
+  </footer>
+</article>

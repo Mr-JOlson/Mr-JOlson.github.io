@@ -1,0 +1,290 @@
+---
+layout: default
+title: Saturn and Neptune · Planetology
+description: A ringed gas giant and a blue ice giant. Pebble accretion, Triton, layered air, and a future that keeps both planets.
+planetology: true
+pair: saturn-neptune
+---
+
+<article class="planetology" data-pair="saturn-neptune">
+  <p class="kicker"><a href="{{ '/planetology/' | relative_url }}">Planetology</a></p>
+  <header class="pair-head">
+    <h1>Saturn and Neptune</h1>
+    <p class="contrast-line">One ringed gas giant and one blue ice giant. The gas disk made the difference.</p>
+    <p class="credit">From the pair notes by Parker Estel and Zara Tavai.</p>
+  </header>
+
+  {% include planetology-nav.html %}
+
+  <div class="glance">
+    <div class="glance__card">
+      <p class="glance__name">Saturn</p>
+      <dl>
+        <div><dt>Kind</dt><dd>Gas giant</dd></div>
+        <div><dt>Mass</dt><dd>95 Earths</dd></div>
+        <div><dt>Distance</dt><dd>9.5 AU</dd></div>
+        <div><dt>Year</dt><dd>29 Earth years</dd></div>
+      </dl>
+    </div>
+    <div class="glance__card">
+      <p class="glance__name">Neptune</p>
+      <dl>
+        <div><dt>Kind</dt><dd>Ice giant</dd></div>
+        <div><dt>Mass</dt><dd>17 Earths</dd></div>
+        <div><dt>Distance</dt><dd>30 AU</dd></div>
+        <div><dt>Year</dt><dd>165 Earth years</dd></div>
+      </dl>
+    </div>
+  </div>
+  <p class="credit">An AU is the average Earth–Sun distance. Masses are rounded to the nearest Earth.</p>
+
+  {% include planetology-questions.html %}
+
+  <section class="q" id="formation">
+    <p class="q__kicker">Question 1</p>
+    <h2>Formation pathway</h2>
+    <p class="answer">Both planets grew inside the young Sun’s gas disk, which lasted only a few million years. The leading pathway is core accretion sped up by pebbles: small bits of rock and ice spiral inward and pile onto a core. Saturn’s core reached a tipping point, pebble isolation, and then pulled in a huge hydrogen-helium envelope before the gas disappeared. Neptune grew later and farther out, missed that tipping point, and was left as an ice giant with only a thin blanket of gas.</p>
+
+    <div class="control">
+      <p class="control__label">Watch the gas disk run out. Both bars use one scale. A full bar would be 100 Earth masses. Dark is ice and rock. Light is hydrogen and helium. Drag the slider or tap a moment. Middle bars are a sketch. Numbers appear only where the notes give them.</p>
+      <div class="stages">
+        <input type="radio" name="gas" id="gas-0" value="0" checked>
+        <input type="radio" name="gas" id="gas-1" value="1">
+        <input type="radio" name="gas" id="gas-2" value="2">
+        <input type="radio" name="gas" id="gas-3" value="3">
+        <input type="radio" name="gas" id="gas-4" value="4">
+        <input type="radio" name="gas" id="gas-5" value="5">
+        <div class="stages__labels">
+          <label for="gas-0">Seeds</label>
+          <label for="gas-1">1 Myr</label>
+          <label for="gas-2">2 Myr</label>
+          <label for="gas-3">Runaway</label>
+          <label for="gas-4">Thinning</label>
+          <label for="gas-5">Gas gone</label>
+        </div>
+        <input class="stages__range" type="range" min="0" max="5" value="0" step="1" data-range="gas" aria-label="Gas-disk moment">
+        <div class="stages__panels">
+          <div class="panel">
+            <span class="tag">Gas disk: thick</span>
+            <h3>Seeds beyond the snow line</h3>
+            <p>Both worlds start as small seeds beyond the snow line, the distance where water stays frozen. Pebbles of ice and rock drift inward through the gas and begin to stick. Nothing here is a giant yet.</p>
+            <div class="mass">
+              <div class="mass__top"><strong>Saturn</strong><span>0.5 Earths · 0% gas</span></div>
+              <div class="track" aria-hidden="true"><i class="rock" style="width:0.5%"></i></div>
+            </div>
+            <div class="mass">
+              <div class="mass__top"><strong>Neptune</strong><span>0.2 Earths · 0% gas</span></div>
+              <div class="track" aria-hidden="true"><i class="rock" style="width:0.2%"></i></div>
+            </div>
+          </div>
+          <div class="panel">
+            <span class="tag">Gas disk: thick</span>
+            <h3>Pebbles stick</h3>
+            <p>Ice and rock keep arriving. The notes still have nothing the size of a giant. Saturn is growing closer in, where pebbles are plentiful. Neptune is farther out, and slower.</p>
+          </div>
+          <div class="panel">
+            <span class="tag">Gas disk: thick</span>
+            <h3>The distances diverge</h3>
+            <p>Saturn is on the way to pebble isolation while gas is still abundant. The mass needed to shut off pebbles is larger at Neptune’s distance, and the disk will not wait.</p>
+          </div>
+          <div class="panel">
+            <span class="tag">Gas disk: still here</span>
+            <h3>Saturn’s envelope collapses</h3>
+            <p>Once pebbles stop, Saturn’s envelope cools and collapses. Gas becomes most of the planet’s mass. Neptune has not reached that tipping point.</p>
+            <div class="mass">
+              <div class="mass__top"><strong>Saturn</strong><span>Sketch. Gas is most of the mass. No total is given for this moment.</span></div>
+              <div class="track" aria-hidden="true"><i class="rock" style="width:12%"></i><i class="gas" style="width:48%"></i></div>
+            </div>
+            <div class="mass">
+              <div class="mass__top"><strong>Neptune</strong><span>Still mostly ice and rock</span></div>
+              <div class="track" aria-hidden="true"><i class="rock" style="width:8%"></i><i class="gas" style="width:1%"></i></div>
+            </div>
+          </div>
+          <div class="panel">
+            <span class="tag">Gas disk: thinning</span>
+            <h3>Neptune’s thin blanket</h3>
+            <p>Only about 1 to 4 Earth masses of hydrogen and helium are captured, out of a final 17. The sketch uses 2. Saturn is already a gas giant. A clump of gas collapsing on its own, disk instability, would not leave Saturn’s enrichment in heavy elements, so it is a poor fit.</p>
+          </div>
+          <div class="panel">
+            <span class="tag">Gas disk: gone</span>
+            <h3>What the disk left</h3>
+            <p>Saturn totals 95 Earths. The notes put the heavy-element mass somewhere around 15 to 30 Earths, and say that number is model-dependent. The bar below uses 20 inside that range, and 75 of gas, so gas is most of the mass. Neptune totals 17, with about 2 of hydrogen and helium in the sketch. Neptune likely finished by collisions among large icy embryos beyond Saturn, not by the gas runaway that built Saturn.</p>
+            <div class="mass">
+              <div class="mass__top"><strong>Saturn</strong><span>20 ice and rock + 75 gas = 95</span></div>
+              <div class="track" aria-hidden="true"><i class="rock" style="width:20%"></i><i class="gas" style="width:75%"></i></div>
+            </div>
+            <div class="mass">
+              <div class="mass__top"><strong>Neptune</strong><span>15 ice and rock + 2 gas = 17</span></div>
+              <div class="track" aria-hidden="true"><i class="rock" style="width:15%"></i><i class="gas" style="width:2%"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="bar-key"><span><i class="rock" style="background:var(--indigo)"></i>Ice and rock</span><span><i class="gas" style="background:var(--ochre)"></i>Hydrogen and helium</span></p>
+    </div>
+    <p class="open"><strong>Still open.</strong> No single simulation yet builds Jupiter, Saturn, Uranus, and Neptune together with the right masses and orbits. Saturn’s heavy-element mass is model-dependent, often put around 15 to 30 Earth masses. The bars are a sketch of the leading idea, not one official timeline. The 20-and-75 split is that sketch, chosen so the total is 95 and the rock sits inside the range the notes give.</p>
+  </section>
+
+  <section class="q" id="collisions">
+    <p class="q__kicker">Question 2</p>
+    <h2>Collisions and captures</h2>
+    <p class="answer">After the gas disk cleared, the giant planets were packed tighter than they are now. An orbital instability moved Uranus and Neptune outward and scattered icy leftovers. Neptune’s headline event is the capture of Triton, whose backward orbit means it was grabbed, not grown in place. Saturn’s headline late event is a possible moon, Chrysalis, pulled apart into the rings about 100 million years ago, plus the capture of the dark outer moon Phoebe.</p>
+    <div class="control">
+      <div class="stages">
+        <input type="radio" name="hit" id="hit-0" value="0" checked>
+        <input type="radio" name="hit" id="hit-1" value="1">
+        <input type="radio" name="hit" id="hit-2" value="2">
+        <input type="radio" name="hit" id="hit-3" value="3">
+        <input type="radio" name="hit" id="hit-4" value="4">
+        <input type="radio" name="hit" id="hit-5" value="5">
+        <input type="radio" name="hit" id="hit-6" value="6">
+        <div class="stages__labels">
+          <label for="hit-0">Ice-giant impacts</label>
+          <label for="hit-1">Stirred core</label>
+          <label for="hit-2">Outward shuffle</label>
+          <label for="hit-3">Triton captured</label>
+          <label for="hit-4">Trojan capture</label>
+          <label for="hit-5">Phoebe captured</label>
+          <label for="hit-6">The rings’ moon</label>
+        </div>
+        <div class="stages__panels">
+          <div class="panel">
+            <h3>Giant impacts finish Neptune</h3>
+            <p>Uranus and Neptune likely took their final shape in collisions between large icy embryos beyond Saturn. Those hits help explain two facts: the ice giants have similar masses, and both spin axes are tilted. Neptune’s tilt is about 28 degrees. Uranus was knocked much farther, nearly onto its side. Pebbles alone have trouble finishing two ice giants of almost the same mass on wide orbits. The tilts are the scars.</p>
+          </div>
+          <div class="panel">
+            <h3>Stirred core</h3>
+            <p>The notes name a stirred core beside those impacts. They do not give a separate measurement of the mixing. The evidence they point to is the pair of tilts.</p>
+          </div>
+          <div class="panel">
+            <h3>Outward shuffle</h3>
+            <p>After the gas cleared, the giants sat in a tighter pack. An orbital instability moved Uranus and Neptune out and scattered icy leftovers.</p>
+          </div>
+          <div class="panel">
+            <h3>Triton</h3>
+            <p>Triton orbits backward. A backward orbit is hard to get any other way, so capture is on firm ground. Triton was grabbed, not grown in place.</p>
+          </div>
+          <div class="panel">
+            <h3>Trojan capture</h3>
+            <p>The notes list Trojan capture with the scattering of icy leftovers. They do not add a count or a date.</p>
+          </div>
+          <div class="panel">
+            <h3>Phoebe</h3>
+            <p>Saturn’s dark outer moon Phoebe is a capture, set beside Chrysalis as Saturn’s late headline.</p>
+          </div>
+          <div class="panel">
+            <h3>Chrysalis</h3>
+            <p>A possible moon pulled apart into the rings about 100 million years ago. The idea is meant to explain the young rings and Saturn’s tilt together. It is still a hypothesis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="open"><strong>Still open.</strong> Triton’s capture is on firm ground because a backward orbit is hard to get any other way. Chrysalis explains the young rings and Saturn’s tilt together, but it is still a hypothesis. How many giant impacts Neptune itself took, and whether a fifth ice giant was ejected, are less settled than the fact that the outer planets moved.</p>
+  </section>
+
+  <section class="q" id="atmosphere">
+    <p class="q__kicker">Question 3</p>
+    <h2>Volatiles and air</h2>
+    <p class="answer">Volatiles here means materials that freeze, melt, or stay gas easily: hydrogen, helium, water, ammonia, and methane. Both planets formed past the snow line, so those ices were part of the building material. Saturn then wrapped them in an enormous hydrogen-helium atmosphere, and helium has been raining inward for billions of years, which helps the planet glow warmer than sunlight alone. Neptune kept most of its mass as hot ice fluids and rock under a thin hydrogen skin tinted blue by methane, and it still leaks enough interior heat to drive extreme winds.</p>
+    <div class="layers">
+      <div class="col">
+        <h3>Saturn</h3>
+        <p class="legend">Outside at the top. Tap a layer.</p>
+        <div class="layer-set">
+          <input type="radio" name="sat" id="sat-1" checked>
+          <input type="radio" name="sat" id="sat-2">
+          <input type="radio" name="sat" id="sat-3">
+          <input type="radio" name="sat" id="sat-4">
+          <div class="layer-stack">
+            <label for="sat-1">1 Ammonia clouds</label>
+            <label for="sat-2">2 Deeper cloud decks</label>
+            <label for="sat-3">3 Helium rain</label>
+            <label for="sat-4">4 Diffuse interior</label>
+          </div>
+          <p class="layer-note">The pale bands are clouds of ammonia ice floating in hydrogen. This is the weather we see: storms and bands in a hydrogen atmosphere, not the body of the planet. Methane, water, and other trace gases ride along in much smaller amounts.</p>
+          <p class="layer-note">The notes name deeper cloud decks under the ammonia ice. They do not give those decks a separate composition.</p>
+          <p class="layer-note">Helium has been raining inward for billions of years. That rain helps Saturn glow warmer than sunlight alone would allow.</p>
+          <p class="layer-note">The deep interior is called diffuse. The enrichment in heavy elements, compared with the Sun, is a fossil of the icy solids that arrived first.</p>
+        </div>
+      </div>
+      <div class="col">
+        <h3>Neptune</h3>
+        <p class="legend">Outside at the top. Tap a layer.</p>
+        <div class="layer-set">
+          <input type="radio" name="nep" id="nep-1" checked>
+          <input type="radio" name="nep" id="nep-2">
+          <input type="radio" name="nep" id="nep-3">
+          <input type="radio" name="nep" id="nep-4">
+          <div class="layer-stack">
+            <label for="nep-1">1 Methane-tinted air</label>
+            <label for="nep-2">2 Thin gas envelope</label>
+            <label for="nep-3">3 Hot ice fluids</label>
+            <label for="nep-4">4 Rock, poorly separated</label>
+          </div>
+          <p class="layer-note">The visible atmosphere is mostly hydrogen and helium with a few percent methane. Methane absorbs red light, so Neptune looks blue. Hazes change the exact shade, which is why Neptune and Uranus are not the same blue. Gases such as carbon monoxide sit out of balance with this cold air, a sign that winds mix gas up from much hotter depths.</p>
+          <p class="layer-note">The thin gas envelope is the firm contrast with Saturn. About 1 to 4 Earth masses of hydrogen and helium, and the sketch uses 2, out of 17.</p>
+          <p class="layer-note">Most of the mass is hot ice fluids under that skin. Interior heat still leaks out and drives extreme winds.</p>
+          <p class="layer-note">Rock is in there, poorly separated from the ice. The ice-to-rock ratio is poorly known.</p>
+        </div>
+      </div>
+    </div>
+    <p class="open"><strong>Still open.</strong> Neptune’s ice-to-rock ratio is poorly known. We have orbited Saturn for years with Cassini, from 2004 to 2017. Neptune has had one flyby, Voyager 2 in 1989. The thin gas envelope is the firm contrast. The exact recipe under it is not.</p>
+  </section>
+
+  <section class="q" id="future">
+    <p class="q__kicker">Question 4</p>
+    <h2>A constrained future</h2>
+    <p class="answer">Neither planet is on a path to be swallowed or ejected. Saturn’s rings drain away on a much shorter clock, a few hundred million years. Triton spirals inward and may be pulled apart into a ring a few billion years from now. When the Sun becomes a red giant in about 5 billion years, it swells to roughly Earth’s orbit, far inside both planets. After the Sun becomes a white dwarf and loses about half its mass, the orbits widen to a bit less than double, and the planets cool again around a faint remnant star.</p>
+    <p class="legend">Firm means the direction is hard to avoid. Bounded means we know the kind of outcome and a rough window, not a calendar date.</p>
+    <div class="control">
+      <div class="stages">
+        <input type="radio" name="fut" id="fut-0" value="0" checked>
+        <input type="radio" name="fut" id="fut-1" value="1">
+        <input type="radio" name="fut" id="fut-2" value="2">
+        <input type="radio" name="fut" id="fut-3" value="3">
+        <input type="radio" name="fut" id="fut-4" value="4">
+        <div class="stages__labels">
+          <label for="fut-0">Today</label>
+          <label for="fut-1">Rings fade</label>
+          <label for="fut-2">Triton</label>
+          <label for="fut-3">Red giant</label>
+          <label for="fut-4">White dwarf</label>
+        </div>
+        <div class="stages__panels">
+          <div class="panel">
+            <span class="tag">Firm · both</span>
+            <h3>The baseline</h3>
+            <p>Saturn is at 9.5 AU. Neptune is at 30 AU. Studies of the orbits find that both stay bound to the Sun through the rest of its life as a normal star. Their paths wobble. They are not expected to swap places or escape.</p>
+          </div>
+          <div class="panel">
+            <span class="tag">Firm · Saturn</span>
+            <h3>Ring rain</h3>
+            <p>The rings are already losing ice into Saturn. Cassini measured that drain, called ring rain. The rings go on a clock of a few hundred million years, much shorter than the planets.</p>
+          </div>
+          <div class="panel">
+            <span class="tag">Firm direction · Neptune</span>
+            <h3>Triton spirals in</h3>
+            <p>Triton orbits backward, so tides pull it inward rather than outward. That spiral has been underway for billions of years. It may be pulled apart into a ring a few billion years from now.</p>
+          </div>
+          <div class="panel">
+            <span class="tag">Firm · both</span>
+            <h3>Red giant</h3>
+            <p>In about 5 billion years the Sun swells to roughly Earth’s orbit. That edge is far inside Saturn at 9.5 AU and Neptune at 30 AU. Neither planet is swallowed.</p>
+          </div>
+          <div class="panel">
+            <span class="tag">Bounded</span>
+            <h3>White dwarf</h3>
+            <p>The Sun loses about half its mass. The orbits widen to a bit less than double. Both planets cool again around a faint remnant star.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="open"><strong>Still open.</strong> Triton’s end date and the exact widened orbits depend on numbers we have not measured well: how strongly Neptune’s interior tides grip the moon, and precisely how the Sun loses mass. What is constrained is the direction of each change, and that both planets survive it.</p>
+  </section>
+
+  <footer class="sources">
+    <h2>Sources</h2>
+    <p>Parker Estel and Zara Tavai, Saturn and Neptune. Missions they name: Cassini, in orbit from 2004 to 2017, and Voyager 2’s Neptune flyby in 1989.</p>
+  </footer>
+  {% include planetology-nav.html end=true %}
+</article>

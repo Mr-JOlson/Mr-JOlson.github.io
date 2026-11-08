@@ -1,0 +1,688 @@
+/* Planetology. Uses the site palette. Bar widths are a fraction of 100 Earth masses. */
+
+.planetology {
+  --pair: var(--indigo);
+  --pair-wash: var(--indigo-wash);
+}
+
+.planetology[data-pair="mercury-mars"] {
+  --pair: var(--clay);
+  --pair-wash: var(--clay-wash);
+}
+
+.planetology[data-pair="earth-venus"] {
+  --pair: var(--verdigris);
+  --pair-wash: var(--verdigris-wash);
+}
+
+.planetology[data-pair="jupiter-uranus"] {
+  --pair: var(--ochre);
+  --pair-wash: var(--ochre-wash);
+}
+
+.planetology[data-pair="saturn-neptune"] {
+  --pair: var(--indigo);
+  --pair-wash: var(--indigo-wash);
+}
+
+.planetology[data-pair="dwarfs"] {
+  --pair: var(--clay);
+  --pair-wash: var(--ochre-wash);
+}
+
+.planetology > .kicker {
+  margin: 0 0 0.35rem;
+}
+
+.pair-head h1,
+.planetology > h1 {
+  margin: 0.15rem 0 0.45rem;
+  max-width: 18ch;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.contrast-line {
+  margin: 0;
+  max-width: 40rem;
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.credit,
+.method {
+  margin: 0.7rem 0 0;
+  max-width: 42rem;
+  color: var(--ink-soft);
+}
+
+.pair-nav,
+.q-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1.15rem 0 0;
+}
+
+.pair-nav a,
+.q-jump a,
+.stages__labels label,
+.pick label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.4rem;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg-raised);
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pair-nav a[aria-current="page"],
+.q-jump a:hover,
+.pair-nav a:hover,
+.stages__labels label:hover,
+.pick label:hover {
+  color: var(--ink);
+  border-color: var(--pair);
+}
+
+.pair-nav a[aria-current="page"] {
+  background: var(--pair-wash);
+  font-weight: 600;
+}
+
+.glance {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin: 1.35rem 0 0.4rem;
+}
+
+.glance__card {
+  padding: 0.9rem 1rem 1rem;
+  background: var(--pair-wash);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.glance__name {
+  margin: 0 0 0.45rem;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+.glance dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.55rem 0.8rem;
+  margin: 0;
+}
+
+.glance dt {
+  color: var(--ink-faint);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.glance dd {
+  margin: 0.1rem 0 0;
+  font-size: 1rem;
+}
+
+.q {
+  margin-top: 2.4rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 5.5rem;
+}
+
+.q__kicker {
+  margin: 0;
+  color: var(--pair);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.q h2 {
+  margin: 0.2rem 0 0.7rem;
+  max-width: 22ch;
+  font-family: var(--serif);
+  font-weight: 560;
+  font-size: clamp(1.45rem, 3vw, 1.9rem);
+  letter-spacing: -0.02em;
+}
+
+.answer {
+  margin: 0 0 1rem;
+  max-width: 44rem;
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+
+.versus {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.col {
+  padding: 0.9rem 1rem 1rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--pair);
+  border-radius: 14px;
+}
+
+.col h3 {
+  margin: 0 0 0.35rem;
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 560;
+}
+
+.col p,
+.panel p,
+.epoch p {
+  margin: 0.4rem 0 0;
+}
+
+.col p:first-of-type {
+  margin-top: 0;
+}
+
+.planetology[data-highlight="pluto"] .col[data-body="pluto"],
+.planetology[data-highlight="ceres"] .col[data-body="ceres"],
+.planetology[data-highlight="eris"] .col[data-body="eris"] {
+  background: var(--pair-wash);
+  border-color: var(--pair);
+}
+
+.evidence,
+.open {
+  max-width: 44rem;
+  margin: 0.8rem 0 0;
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  line-height: 1.55;
+}
+
+.evidence {
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+}
+
+.open {
+  background: var(--ochre-wash);
+  border: 1px solid var(--line);
+}
+
+.evidence strong,
+.open strong {
+  font-weight: 600;
+}
+
+.control {
+  margin-top: 1rem;
+}
+
+.control__label,
+.pick__label,
+.legend {
+  margin: 0 0 0.45rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.stages input[type="radio"],
+.pick input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.stages__labels,
+.pick__labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.pick input:focus-visible + label,
+.stages:has(> input[value="0"]:focus-visible) label[for$="-0"],
+.stages:has(> input[value="1"]:focus-visible) label[for$="-1"],
+.stages:has(> input[value="2"]:focus-visible) label[for$="-2"],
+.stages:has(> input[value="3"]:focus-visible) label[for$="-3"],
+.stages:has(> input[value="4"]:focus-visible) label[for$="-4"],
+.stages:has(> input[value="5"]:focus-visible) label[for$="-5"],
+.stages:has(> input[value="6"]:focus-visible) label[for$="-6"],
+.stages:has(> input[value="7"]:focus-visible) label[for$="-7"] {
+  outline: 2px solid var(--indigo);
+  outline-offset: 3px;
+}
+
+.pick input:checked + label,
+.stages:has(> input[value="0"]:checked) label[for$="-0"],
+.stages:has(> input[value="1"]:checked) label[for$="-1"],
+.stages:has(> input[value="2"]:checked) label[for$="-2"],
+.stages:has(> input[value="3"]:checked) label[for$="-3"],
+.stages:has(> input[value="4"]:checked) label[for$="-4"],
+.stages:has(> input[value="5"]:checked) label[for$="-5"],
+.stages:has(> input[value="6"]:checked) label[for$="-6"],
+.stages:has(> input[value="7"]:checked) label[for$="-7"] {
+  background: var(--pair-wash);
+  border-color: var(--pair);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.stages__range {
+  width: min(100%, 36rem);
+  margin: 0.7rem 0 0.15rem;
+  accent-color: var(--pair);
+}
+
+.stages .panel {
+  display: none;
+  margin-top: 0;
+  padding: 0.95rem 1rem 1rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.stages__panels {
+  margin-top: 0.85rem;
+}
+
+.stages > input:nth-of-type(1):checked ~ .stages__panels > .panel:nth-child(1),
+.stages > input:nth-of-type(2):checked ~ .stages__panels > .panel:nth-child(2),
+.stages > input:nth-of-type(3):checked ~ .stages__panels > .panel:nth-child(3),
+.stages > input:nth-of-type(4):checked ~ .stages__panels > .panel:nth-child(4),
+.stages > input:nth-of-type(5):checked ~ .stages__panels > .panel:nth-child(5),
+.stages > input:nth-of-type(6):checked ~ .stages__panels > .panel:nth-child(6),
+.stages > input:nth-of-type(7):checked ~ .stages__panels > .panel:nth-child(7),
+.stages > input:nth-of-type(8):checked ~ .stages__panels > .panel:nth-child(8) {
+  display: block;
+}
+
+.stages--stack .panel {
+  display: block;
+  margin-top: 0.45rem;
+  border-left: 3px solid var(--line);
+  border-radius: 0 14px 14px 0;
+}
+
+.stages--stack > input:nth-of-type(1):checked ~ .stages__panels > .panel:nth-child(1),
+.stages--stack > input:nth-of-type(2):checked ~ .stages__panels > .panel:nth-child(2),
+.stages--stack > input:nth-of-type(3):checked ~ .stages__panels > .panel:nth-child(3),
+.stages--stack > input:nth-of-type(4):checked ~ .stages__panels > .panel:nth-child(4),
+.stages--stack > input:nth-of-type(5):checked ~ .stages__panels > .panel:nth-child(5),
+.stages--stack > input:nth-of-type(6):checked ~ .stages__panels > .panel:nth-child(6),
+.stages--stack > input:nth-of-type(7):checked ~ .stages__panels > .panel:nth-child(7),
+.stages--stack > input:nth-of-type(8):checked ~ .stages__panels > .panel:nth-child(8) {
+  display: block;
+  border-left-color: var(--pair);
+  background: var(--pair-wash);
+}
+
+.panel h3,
+.epoch h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+}
+
+.tag {
+  display: inline-block;
+  margin: 0 0.35rem 0.35rem 0;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  background: var(--pair-wash);
+  color: var(--ink);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.mass {
+  margin-top: 0.85rem;
+}
+
+.mass + .mass {
+  margin-top: 0.7rem;
+}
+
+.mass__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.28rem;
+  font-size: 0.95rem;
+}
+
+.mass__top span {
+  color: var(--ink-soft);
+  text-align: right;
+}
+
+.track {
+  display: flex;
+  height: 0.85rem;
+  overflow: hidden;
+  background: var(--line);
+  border-radius: 999px;
+}
+
+.track i {
+  display: block;
+  height: 100%;
+  min-width: 2px;
+}
+
+.track .rock { background: var(--indigo); }
+.track .gas { background: var(--ochre); }
+
+.bar-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 0.55rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+.bar-key i {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: 0.3rem;
+  border-radius: 2px;
+  vertical-align: -1px;
+}
+
+.cores {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
+}
+
+.core {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.orb {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  background: var(--clay-wash);
+  border: 1px solid var(--clay);
+  display: grid;
+  place-items: center;
+}
+
+.orb b {
+  display: block;
+  border-radius: 50%;
+  background: var(--clay);
+}
+
+.orb--mercury b {
+  width: 85%;
+  height: 85%;
+}
+
+.orb--rock {
+  background:
+    radial-gradient(circle at 35% 35%, var(--ochre-wash), var(--clay-wash) 55%, var(--clay));
+  border-color: var(--clay);
+}
+
+.layers {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+}
+
+.layer-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.layer-stack label {
+  display: block;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  cursor: pointer;
+}
+
+.layer-set {
+  position: relative;
+}
+
+.layer-set input {
+  position: absolute;
+  opacity: 0;
+}
+
+.layer-set input:checked + label {
+  background: var(--pair-wash);
+  border-color: var(--pair);
+  font-weight: 600;
+}
+
+.layer-set input:focus-visible + label {
+  outline: 2px solid var(--indigo);
+  outline-offset: 2px;
+}
+
+.layer-set .layer-note {
+  display: none;
+  margin: 0.55rem 0 0;
+  color: var(--ink-soft);
+}
+
+.layer-set > input:nth-of-type(1):checked ~ .layer-note:nth-of-type(1),
+.layer-set > input:nth-of-type(2):checked ~ .layer-note:nth-of-type(2),
+.layer-set > input:nth-of-type(3):checked ~ .layer-note:nth-of-type(3),
+.layer-set > input:nth-of-type(4):checked ~ .layer-note:nth-of-type(4) {
+  display: block;
+}
+
+.layer-set:has(> input:nth-of-type(1):checked) .layer-stack label:nth-child(1),
+.layer-set:has(> input:nth-of-type(2):checked) .layer-stack label:nth-child(2),
+.layer-set:has(> input:nth-of-type(3):checked) .layer-stack label:nth-child(3),
+.layer-set:has(> input:nth-of-type(4):checked) .layer-stack label:nth-child(4) {
+  background: var(--pair-wash);
+  border-color: var(--pair);
+  font-weight: 600;
+}
+
+.chrono {
+  margin: 1.15rem 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.chrono li {
+  margin: 0;
+  padding: 0.55rem 0 0.55rem 2.1rem;
+  border-left: 2px solid var(--line);
+  counter-increment: step;
+}
+
+.chrono li::before {
+  content: counter(step);
+  float: left;
+  margin-left: -1.7rem;
+  color: var(--pair);
+  font-family: var(--serif);
+  font-weight: 560;
+}
+
+.chrono a {
+  font-weight: 600;
+}
+
+.spine {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.spine a {
+  display: block;
+  padding: 1rem 1.05rem 1.05rem;
+  color: inherit;
+  text-decoration: none;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--spine, var(--indigo));
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.spine a:hover {
+  border-color: var(--spine, var(--indigo));
+}
+
+.spine .idx {
+  margin: 0;
+  color: var(--spine, var(--indigo));
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.spine h2 {
+  margin: 0.2rem 0 0.35rem;
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  letter-spacing: -0.02em;
+}
+
+.spine p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.questions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+  margin: 1.2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.questions li {
+  padding: 0.75rem 0.9rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.questions strong {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 560;
+}
+
+.sources {
+  margin-top: 2.4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+}
+
+.sources h2 {
+  margin: 0 0 0.4rem;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.25rem;
+}
+
+.sources p {
+  margin: 0.35rem 0 0;
+  max-width: 46rem;
+}
+
+.pair-nav--end {
+  margin-top: 1.4rem;
+}
+
+@media (min-width: 720px) {
+  .glance,
+  .versus,
+  .cores,
+  .layers,
+  .questions {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .versus--3,
+  .spine {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .spine li:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 980px) {
+  .versus--3,
+  .glance--3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .core {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .glance dl {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  .stages .panel,
+  .layer-set .layer-note { display: block; }
+  .pair-nav, .q-jump, .stages__labels, .stages__range, .pick { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track i { transition: none; }
+}

@@ -29,6 +29,7 @@
 - Games (`/games/`): Interactive experiments (Vector Fleet, Invaders Breakout).
 - Writing Projects (`/writing/`): Longer pieces, satire, book-related drafts.
 - Ideas and Reflections about Science and Philosophy (`/ideas-and-reflections/`): Scientific and philosophical notes.
+- Planetology (`/planetology/`): Five pair pages and an index. Same four questions on every page. Credit the pair on the page. Do not frame it as a course, class, or school portal.
 
 ## Theme
 - Custom layouts in `_layouts/` and styles in `assets/css/style.scss`. Do not restore `remote_theme` or the Minimal theme.

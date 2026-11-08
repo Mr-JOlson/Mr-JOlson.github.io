@@ -14,6 +14,7 @@ Move the site away from Gulf Breeze High School course materials. Academic pages
 | Games | `/games/` | Vector Fleet and Invaders Breakout. Treat as interactive experiments. |
 | Writing Projects | `/writing/` | Longer pieces, satire, book-related drafts. |
 | Ideas and Reflections about Science and Philosophy | `/ideas-and-reflections/` | Combined scientific and philosophical notes. Shorter or medium pieces on physics, astronomy, systems, mind, education, and first principles. |
+| Planetology | `/planetology/` | One timeline for five world pairs. Same four questions on every page. Personal project, not a course page. |
 
 Blog posts remain in `_posts/` with ordinary Jekyll front matter. Category or tag pages can surface the ideas and reflections if a single index is preferred later.
 

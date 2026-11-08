@@ -1,0 +1,157 @@
+---
+layout: default
+title: Pluto, Ceres, and Eris · Planetology
+description: Three dwarf planets, built by accumulation, marked by one kiss-and-capture, a cratered surface, and an impact moon. Air too thin to warm the ice.
+planetology: true
+pair: dwarfs
+---
+
+<article class="planetology" data-pair="dwarfs">
+  <p class="kicker"><a href="{{ '/planetology/' | relative_url }}">Planetology</a></p>
+  <header class="pair-head">
+    <h1>Pluto, Ceres, and Eris</h1>
+    <p class="contrast-line">Three dwarf planets, three kinds of impact, and atmospheres too thin to warm the ice.</p>
+    <p class="credit">From the pair notes by Lucas Noury and Andrew Davis. Pluto, Ceres, and Eris are kept together as the dwarf-planet set.</p>
+  </header>
+
+  {% include planetology-nav.html %}
+
+  <div class="glance glance--3">
+    <div class="glance__card">
+      <p class="glance__name">Pluto</p>
+      <dl>
+        <div><dt>Region</dt><dd>Kuiper belt</dd></div>
+        <div><dt>Air</dt><dd>Thin nitrogen</dd></div>
+        <div><dt>Moon</dt><dd>Charon, kiss-and-capture</dd></div>
+        <div><dt>Seen by</dt><dd>New Horizons</dd></div>
+      </dl>
+    </div>
+    <div class="glance__card">
+      <p class="glance__name">Ceres</p>
+      <dl>
+        <div><dt>Region</dt><dd>Asteroid belt</dd></div>
+        <div><dt>Air</dt><dd>Temporary water vapor</dd></div>
+        <div><dt>Surface</dt><dd>Cratered</dd></div>
+        <div><dt>Seen by</dt><dd>Dawn</dd></div>
+      </dl>
+    </div>
+    <div class="glance__card">
+      <p class="glance__name">Eris</p>
+      <dl>
+        <div><dt>Region</dt><dd>Kuiper belt, farther out</dd></div>
+        <div><dt>Air</dt><dd>None detected</dd></div>
+        <div><dt>Moon</dt><dd>Dysnomia, from an impact</dd></div>
+        <div><dt>Distance</dt><dd>~70% farther than Pluto at the far end</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="pick" data-highlight-group role="radiogroup" aria-label="Highlight one body. The other two stay on the page.">
+    <p class="pick__label" id="pick-label">Highlight one body. The other two stay on the page.</p>
+    <div class="pick__labels">
+      <input type="radio" name="body" id="body-all" value="all" checked>
+      <label for="body-all">All three</label>
+      <input type="radio" name="body" id="body-pluto" value="pluto">
+      <label for="body-pluto">Pluto</label>
+      <input type="radio" name="body" id="body-ceres" value="ceres">
+      <label for="body-ceres">Ceres</label>
+      <input type="radio" name="body" id="body-eris" value="eris">
+      <label for="body-eris">Eris</label>
+    </div>
+  </div>
+
+  {% include planetology-questions.html %}
+
+  <section class="q" id="formation">
+    <p class="q__kicker">Question 1</p>
+    <h2>Formation pathway</h2>
+    <p class="answer">All three formed by accumulation of smaller rocky or icy bodies. Radioactive heat differentiated the interiors. None gained enough mass to clear its orbit, which is why the notes keep them as dwarf planets rather than planets. Pluto and Eris grew in the Kuiper belt. Ceres grew in the asteroid belt, between Mars and Jupiter.</p>
+    <div class="versus versus--3">
+      <div class="col" data-body="pluto">
+        <h3>Pluto</h3>
+        <p>The core is tied, in the notes, to the same era that built comets, moons, and other rocky bodies. Gas and ice were pulled in later. Pluto never gathered enough mass to become a full-size planet or to clear its orbit.</p>
+      </div>
+      <div class="col" data-body="ceres">
+        <h3>Ceres</h3>
+        <p>Gradual accumulation of smaller rocky bodies where dust and gas were plentiful, between Mars and Jupiter. Radioactive decay heated the interior and layered it. Ceres could not clear that orbit or merge into a larger body.</p>
+      </div>
+      <div class="col" data-body="eris">
+        <h3>Eris</h3>
+        <p>Accumulation of smaller icy bodies in a dense part of the outer system. At its farthest it sits about 70% farther out than Pluto. Radiogenic heat drove differentiation. Under a nitrogen and methane surface is a convective ice shell. Eris and Dysnomia are tidally locked to each other, a doubly synchronous pair.</p>
+      </div>
+    </div>
+    <p class="evidence"><strong>Evidence.</strong> The shared key point in the notes: accumulation, radioactive heating, and not enough mass to clear an orbit. Eris’s “about 70% farther” is their distance comparison, at the far end of the orbit.</p>
+  </section>
+
+  <section class="q" id="collisions">
+    <p class="q__kicker">Question 2</p>
+    <h2>Collisions and captures</h2>
+    <p class="answer">Pluto’s headline is Charon. In Denton’s kiss-and-capture model, Pluto and Charon hit about 4.5 billion years ago, stuck for 10 to 15 hours, and then separated into orbit instead of destroying each other. The heat of that collision is their explanation for Pluto’s active geology. Ceres’s record is a cratered surface, with bodies about 10 km across hitting on the order of once every 10 million years. Eris’s moon Dysnomia formed when a body hundreds of kilometers across hit Eris and the debris went into orbit.</p>
+    <div class="versus versus--3">
+      <div class="col" data-body="pluto">
+        <h3>Pluto and Charon</h3>
+        <p>Kiss-and-capture. They collided and did not destroy each other. Stuck for 10 to 15 hours, then slowly separated, still trapped in orbit. New Horizons imaged Charon.</p>
+      </div>
+      <div class="col" data-body="ceres">
+        <h3>Ceres</h3>
+        <p>Many smaller hits, not one moon-making impact. A cratered surface. Bodies about 10 km across, about once every 10 million years. Dawn imaged Ceres.</p>
+      </div>
+      <div class="col" data-body="eris">
+        <h3>Eris and Dysnomia</h3>
+        <p>One giant impact. A body hundreds of kilometers across. Debris ejected into orbit became Dysnomia.</p>
+      </div>
+    </div>
+    <p class="evidence"><strong>Evidence.</strong> Charon at about 4.5 billion years, a 10 to 15 hour contact, then separation. Ceres cratering rate as stated. Dysnomia from an impact of a body hundreds of kilometers across. New Horizons for Pluto and Charon. Dawn for Ceres.</p>
+    <p class="open"><strong>Still open.</strong> Kiss-and-capture is presented as a common theory, Denton’s model, not as a settled reconstruction. The comparison slide in the notes says 10 to 14 hours. The Charon slide says 10 to 15. Both are “about half a day.”</p>
+  </section>
+
+  <section class="q" id="atmosphere">
+    <p class="q__kicker">Question 3</p>
+    <h2>Volatiles and air</h2>
+    <p class="answer">Pluto’s atmosphere is very thin and almost entirely molecular nitrogen, with traces of methane and carbon monoxide. The 9 June 1988 stellar occultation, seen from eight sites, measured the scale height. Nitrogen, methane, and carbon monoxide ice can sublimate. Ceres has a very thin temporary exosphere, thought to be mostly water vapor vented by internal heat. Water ice sublimates there. Eris has no atmosphere that current measurements can detect. If one exists, it is extremely thin, forms near the far end of the orbit, and then the gas collapses and freezes onto the surface as snow. Methane ice sublimates on Eris. None of the three atmospheres is thick enough to warm the surface.</p>
+    <div class="versus versus--3">
+      <div class="col" data-body="pluto">
+        <h3>Pluto</h3>
+        <p>Nitrogen, plus methane and carbon monoxide. Thin enough that starlight during the 1988 occultation could size it. Ices sublimate.</p>
+      </div>
+      <div class="col" data-body="ceres">
+        <h3>Ceres</h3>
+        <p>A temporary exosphere, mostly water vapor, tied to venting. Water ice sublimates. Not a permanent air.</p>
+      </div>
+      <div class="col" data-body="eris">
+        <h3>Eris</h3>
+        <p>Nothing detected. Any air would form near apogee and then snow back onto a nitrogen and methane surface.</p>
+      </div>
+    </div>
+    <p class="evidence"><strong>Evidence.</strong> Pluto’s composition from the notes’ detailed atmosphere slide: molecular nitrogen, methane, carbon monoxide. The 9 June 1988 occultation. Ceres water vapor. Eris undetected. The comparison slide once says carbon dioxide for Pluto. The detailed slide says carbon monoxide. This page follows the detailed slide.</p>
+    <p class="open"><strong>Still open.</strong> Eris’s atmosphere is “if it has one.” Ceres’s exosphere is “believed” and temporary. Pluto’s air is the one with a direct occultation measurement in these notes.</p>
+  </section>
+
+  <section class="q" id="future">
+    <p class="q__kicker">Question 4</p>
+    <h2>A constrained future</h2>
+    <p class="answer">As the Sun expands it loses mass, and the orbits expand. Ceres, much closer than the other two, faces a different heat. Surface ice sublimates and near-surface water evaporates. Pluto is expected to remain an icy dwarf for billions of years. Around a white-dwarf Sun it may stay in orbit, though disturbances from passing stars could destabilize it. Eris is less certain. If it stays bound, the orbit expands. Because it is so distant, the orbit may not stay stable, and a rare disturbance could send it out of the solar system. The notes call that ejection highly unlikely, and still possible.</p>
+    <div class="versus versus--3">
+      <div class="col" data-body="pluto">
+        <h3>Pluto</h3>
+        <p>Orbit widens. Stays icy for billions of years. May remain after the Sun is a white dwarf. Passing stars could disturb it.</p>
+      </div>
+      <div class="col" data-body="ceres">
+        <h3>Ceres</h3>
+        <p>A harsher thermal future because it is closer. Surface ice and near-surface water leave. The orbit still expands.</p>
+      </div>
+      <div class="col" data-body="eris">
+        <h3>Eris</h3>
+        <p>Orbit widens if it stays bound. Stability is the weak point. Ejection is possible and, in the notes, highly unlikely.</p>
+      </div>
+    </div>
+    <p class="evidence"><strong>Evidence.</strong> Solar mass loss weakens the pull and pushes the orbits out. That is the shared future in the notes. Ceres is the one whose ice and near-surface water are lost to the extra heat.</p>
+    <p class="open"><strong>Still open.</strong> Pluto “may remain.” Eris’s future is called uncertain. Ejection is “highly unlikely, but still possible.” The direction that is shared, and more firmly stated, is that the orbits expand.</p>
+  </section>
+
+  <footer class="sources">
+    <h2>Sources</h2>
+    <p>Lucas Noury and Andrew Davis, Pluto, Ceres, and Eris. Images they credit: New Horizons views of Pluto and Charon, NASA / JHUAPL / SwRI, and a Dawn view of Ceres, NASA / JPL-Caltech. Eris is an illustration in their notes. The atmosphere measurement they cite is the 9 June 1988 stellar occultation.</p>
+  </footer>
+  {% include planetology-nav.html end=true %}
+</article>

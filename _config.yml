@@ -32,6 +32,10 @@ navigation:
     link: /ideas-and-reflections/
     tone: ideas
     title: Ideas and reflections about science and philosophy
+  - name: Planetology
+    link: /planetology/
+    tone: planets
+    title: Five pairs of worlds, four questions, one timeline
 
 markdown: kramdown
 highlighter: rouge

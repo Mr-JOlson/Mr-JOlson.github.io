@@ -215,6 +215,9 @@ body[data-section="si"] .site-header::after { background: var(--verdigris); }
 body[data-section="games"] .site-header::after { background: var(--ochre); }
 body[data-section="writing"] .site-header::after { background: var(--clay); }
 body[data-section="ideas"] .site-header::after { background: var(--indigo); }
+body[data-section="planetology"] .site-header::after {
+  background: linear-gradient(90deg, var(--clay), var(--indigo));
+}
 
 .wordmark {
   display: inline-flex;
@@ -279,6 +282,9 @@ body[data-section="ideas"] .site-header::after { background: var(--indigo); }
 .site-nav a[data-tone="games"] .nav-dot { background: var(--ochre); }
 .site-nav a[data-tone="writing"] .nav-dot { background: var(--clay); }
 .site-nav a[data-tone="ideas"] .nav-dot { background: var(--indigo); }
+.site-nav a[data-tone="planets"] .nav-dot {
+  background: linear-gradient(135deg, var(--clay), var(--indigo));
+}
 .site-nav a[data-tone="home"] .nav-dot {
   background: linear-gradient(135deg, var(--verdigris), var(--indigo));
 }
@@ -315,8 +321,9 @@ body[data-section="ideas"] .site-header::after { background: var(--indigo); }
 }
 
 .site-main:has(.card-grid),
-.is-home .site-main {
-  width: min(100% - 2rem, 68rem);
+.is-home .site-main,
+body[data-section="planetology"] .site-main {
+  width: min(100% - 2rem, 72rem);
 }
 
 .site-main > p,
@@ -457,6 +464,11 @@ a.card:hover .card__title {
 .card[data-tone="ideas"] {
   --tone: var(--indigo);
   --wash: var(--indigo-wash);
+}
+
+.card[data-tone="planets"] {
+  --tone: var(--indigo);
+  --wash: var(--verdigris-wash);
 }
 
 .card__index {
@@ -679,6 +691,10 @@ hr {
 @media (min-width: 720px) {
   .card-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .card--wide {
+    grid-column: 1 / -1;
   }
 }
 
